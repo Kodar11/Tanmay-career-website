@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    #banner{
+      height: 360px;
+      width:100%;
+      
+    }
+  </style>
+  <title>Tanmay Careers</title>
+  
+</head>
+<body>
+  <div class ="container">
+  <h1 class ="text-center mt-2 mb-4">Tanmay Careers</h1>
+  <img id ="banner" class ="img-fluid" src="https://137abe43-ae13-4c3c-ae7f-b8f8853fa284-00-y33ajm552mtc.sisko.replit.dev/static/banner.jpeg" height="320">
+  <h2 class="text-center mt-2 mb-4">About Tanmay</h2>
+  <p class ="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque porttitor velit, in congue felis gravida a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et consectetur massa, nec pretium velit. Integer lorem diam, vehicula non tincidunt at, vulputate sit amet lorem. Nam non dictum nisi. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec sollicitudin nunc non ante ornare, nec feugiat est aliquam.</p>
+
+  <h2 class ="text-center mt-2 mb-4">Open Positions</h2>
+  <div>
+    {% for job in jobs %}
+      {% include 'jobitem.html' %}
+    {% endfor %}
+  </div>
+  <div class ="text-center">
+    <button type="button" class="btn btn-primary btn-lg">Contact us</button>
+    <p class="mt-4">Copyright 2023, Tanmay</p>  
+  </div>
+  </div>
+</body>
+</html>
